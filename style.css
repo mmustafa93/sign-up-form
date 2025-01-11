@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/Norse-Bold.otf') format('truetype'); /* Adjust the format as needed */
+    font-weight: bold; /* Optional: Define weight */
+    font-style: normal;
+}
+
+#image-sidebar {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    height: 25%;
+}
+
+#logo {
+    width: 15%;
+}
+
+#logo-container > h2 {
+    color: whitesmoke;
+    font-size: 6rem;
+    font-family: 'MyCustomFont', sans-serif; /* Fallback to sans-serif if font doesn't load */
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+#image-sidebar > p {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+#image-sidebar > p > a {
+    color: white;
+}
